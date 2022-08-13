@@ -1,0 +1,257 @@
+﻿Modality,StudyDescription,LOINC code,L-Long Common Name
+CT,[no match],25045-6,CT Unspecified body region
+CT,CT CHEST WO IV CONT,29252-4,CT Chest WO contrast
+CT,CTA CHEST (PE STUDY) W CONTRAST,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST PULMONARY ANGIO WITH IV CON,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT ABD AND PELVIS WITH IV CONT,36813-4,CT Abdomen and Pelvis W contrast IV
+CT,CT CHEST WITH CONTRAST,24628-0,CT Chest W contrast IV
+CT,CT ABD AND PELVIS WO IV CONT,36952-0,CT Abdomen and Pelvis WO contrast
+CT,Vascular^PE_STUDY (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST WITHOUT CONTRAST,29252-4,CT Chest WO contrast
+CT,CT CHEST PULMONARY EMBOLISM (CTPE),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,THORAX PE,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST WITHOUT IV CONTRAST,29252-4,CT Chest WO contrast
+CT,Thorax^PE (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,Thorax^CT_PE (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,Thorax^DE_CHEST_PE_Customized (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST HIGH RESOLUTION,29252-4,CT Chest WO contrast
+CT,CT PE CHEST,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,THORAX/ABDOMEN/PELVIS + CONT,72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CT ABD PELVIS(WITH CHEST IMAGES) WO IV CON,72253-8,CT Chest and Abdomen and Pelvis WO contrast
+CT,CT ANGIO ABD AND PEL WWO IV CONT,82679-2,CTA Abdominal vessels and Pelvis vessels WO and W contrast IV
+CT,Thorax^FLASH_PE (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT ABD PELVIS(WITH CHEST IMAGES) W IV CON,72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CT ABDOMEN PELVIS W CONTRAST (ROUTINE),36813-4,CT Abdomen and Pelvis W contrast IV
+CT,CT HEAD WO CONTRAST,30799-1,CT Head WO contrast
+CT,CT ANGIOGRAM CHEST,36266-5,CTA Chest vessels W contrast IV
+CT,Thorax^XL_PE_Customized (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,Vascular^CTA_PE_GR (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST ABDOMEN PELVIS W,72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CTA CORONARY,79073-3,CTA Heart and Coronary arteries W contrast IV
+CT,Head^HEAD (Adult),30799-1,CT Head WO contrast
+CT,PET CT FDG IMAG SKULL TO THIGH,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+CT,THORAX PE + LOW DOSE,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,Thorax^DE_CHEST_PE (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,Thorax^DE_PE (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT ABD AND PELVIS WITH IV CONTRAST,36813-4,CT Abdomen and Pelvis W contrast IV
+CT,CT ABDOMEN PELVIS WO CONTRAST (ROUTINE),36952-0,CT Abdomen and Pelvis WO contrast
+CT,CT CHEST ABDOMEN PELVIS W CONTRAST (ROUTINE),72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CT CHEST WO CONTRAST,29252-4,CT Chest WO contrast
+CT,Head^DE_HEAD_WITHOUT (Adult),30799-1,CT Head WO contrast
+CT,IR CT CHEST TUBE,25045-6,CT Unspecified body region
+CT,Thorax^XL_PE (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,Abdomen^ABDOMEN_PELVIS_W_ROUTINE (Adult),36813-4,CT Abdomen and Pelvis W contrast IV
+CT,Abdomen^CT_AP_WITH (Adult),79103-8,CT Abdomen W contrast IV
+CT,CT HEART FOR CONGENITAL HEART DISEASE,79073-3,CTA Heart and Coronary arteries W contrast IV
+CT,LUNG PERFU SION IMAGING,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,THORAX + CONT,24628-0,CT Chest W contrast IV
+CT,Abdomen^ABD_PEL_WITH (Adult),36813-4,CT Abdomen and Pelvis W contrast IV
+CT,Abdomen^ABD_PEL_WO (Adult),36952-0,CT Abdomen and Pelvis WO contrast
+CT,CODE_T_CT_ANGIO_ABD_AND_PEL_WITH_IV_CON_WITH_CHEST_IMAG,69908-2,CTA Abdominal vessels and Pelvis vessels W contrast IV
+CT,CODE_T_CT_THOR_LMBR_SPINAL_REFORMATS,83294-9,CT Thoracic and lumbar spine W contrast IV
+CT,CT ABD WO IV CONT,36424-0,CT Abdomen WO contrast
+CT,CT ABDOMEN PELVIS WO CONTRAST (STONE),36952-0,CT Abdomen and Pelvis WO contrast
+CT,CT CHEST ABDOMEN PELVIS W CONTRAST (TRAUMA),72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CT CHEST ABDOMEN PELVIS WO CONTRAST (ROUTINE),72253-8,CT Chest and Abdomen and Pelvis WO contrast
+CT,CT CHEST W CONTRAST,24628-0,CT Chest W contrast IV
+CT,CT CHEST WITH AND WITHOUT CONTRAST,30598-7,CT Chest WO and W contrast IV
+CT,CT CHEST WITH IV CONT,24628-0,CT Chest W contrast IV
+CT,CT FACE SINUSES WO CONTRAST,72249-6,CT Facial bones WO contrast
+CT,CT LUNG CANCER SCREENING,79086-5,CT Chest for screening WO contrast
+CT,CT SPINE CERVICAL WO CONTRAST,30592-0,CT Cervical spine WO contrast
+CT,Head^ROUTINE_DE_HEAD (Adult),30799-1,CT Head WO contrast
+CT,Pelvis^CT_PELVIS_WITH (Adult),24866-6,CT Pelvis W contrast IV
+CT,Thorax^CHEST_WO (Adult),29252-4,CT Chest WO contrast
+CT,Thorax^CT_CHEST_WITH (Adult),24628-0,CT Chest W contrast IV
+CT,Thorax^PE_STUDY (Adult),79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,TRAUMA CT ABD PEL 2PHASE WITH IV CON WITH CHEST IMAGES,72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,Abdomen^1_ROUTINE_CAP (Adult),25045-6,CT Unspecified body region
+CT,Abdomen^ABD_PELVIS_WITHOUT (Adult),25045-6,CT Unspecified body region
+CT,Abdomen^CT_UROGRAM_STONE_STUDY (Adult),25045-6,CT Unspecified body region
+CT,Abdomen^HEMATURIA_OVER_45 (Adult),36267-3,CT Abdomen WO and W contrast IV
+CT,Abdomen^ROUTINE_AP_WITH_UNDER_50_OVER_250 (Adult),25045-6,CT Unspecified body region
+CT,CARDIAC CORONARY CTA,79073-3,CTA Heart and Coronary arteries W contrast IV
+CT,CT ABD AND PELVIS WO IV CONTRAST,36952-0,CT Abdomen and Pelvis WO contrast
+CT,CT ABD AND PELVIS WWO IV CONT,42274-1,CT Abdomen and Pelvis WO and W contrast IV
+CT,CT ABD/PEL WITH IV CONTRAST,36813-4,CT Abdomen and Pelvis W contrast IV
+CT,CT ABDOMEN PELVIS WWO CONTRAST,42274-1,CT Abdomen and Pelvis WO and W contrast IV
+CT,CT ANGIO HEAD W OR WO CONTRAST,25045-6,CT Unspecified body region
+CT,CT ANGIOGRAPHY CHEST,25045-6,CT Unspecified body region
+CT,CT ANGIOGRAPHY NECK AND HEAD,25045-6,CT Unspecified body region
+CT,CT BRAIN WITHOUT CONTRAST,30799-1,CT Head WO contrast
+CT,CT CHEST WO IV CONTRAST,29252-4,CT Chest WO contrast
+CT,CT CHEST(SEE AB/PEL) W IV CON,25045-6,CT Unspecified body region
+CT,"CT CODE STROKE (BRAIN WO, CTA, PERFUSION)",24726-2,CT Head WO and W contrast IV
+CT,CT CORONARY CALCIUM SCORE,79087-3,CT Heart and Coronary arteries for calcium scoring WO contrast
+CT,CT ESOPHAGRAM,25045-6,CT Unspecified body region
+CT,CT HEAD WWO CONTRAST,24726-2,CT Head WO and W contrast IV
+CT,CT NECK/THYROID W CONTRAST,25045-6,CT Unspecified body region
+CT,CTA CHEST (THORACIC DISSECTION) WWO CONTRAST,30598-7,CT Chest WO and W contrast IV
+CT,CTA CHEST AND ABDOMEN (THORACOABDOMNAL DISSECTION) WWO CONTRAST,86971-9,CTA Chest and abdominal vessels WO and W contrast IV
+CT,Head^CT_HEAD_WO (Adult),30799-1,CT Head WO contrast
+CT,Head^CT_MAXILLOFACIAL_WITH (Adult),25045-6,CT Unspecified body region
+CT,Head^DE_CTA_HEAD_NECK_Customized (Adult),25045-6,CT Unspecified body region
+CT,Head^DE_CTA_NECK (Adult),25045-6,CT Unspecified body region
+CT,Head^DE_HEAD_WITHOUT_Customized (Adult),30799-1,CT Head WO contrast
+CT,IR CHEST TUBE PLACEMENT (ORERABLE BY IR SERVICE ONLY),25045-6,CT Unspecified body region
+CT,Neck^NECKWITHGR (Adult),25045-6,CT Unspecified body region
+CT,PET^1HPPETCT_WholeBody (Adult),46305-9,CT Whole body
+CT,PULMONARY PERFU SION,25045-6,CT Unspecified body region
+CT,Spine^C_Spine_Tin_Filter (Adult),25045-6,CT Unspecified body region
+CT,THORAX LOW DOSE,87279-6,CT Chest for screening
+CT,Thorax^CHEST_ABD_PEL_WO (Adult),25045-6,CT Unspecified body region
+CT,Thorax^CHEST_WO_GR (Adult),25045-6,CT Unspecified body region
+CT,Thorax^FLASH_CHEST_WITH_ (Adult),25045-6,CT Unspecified body region
+CT,Thorax^FLASH_PE_Customized (Adult),25045-6,CT Unspecified body region
+CT,Thorax^ROUTINE_CHEST_ABD_PEL_WITH (Adult),25045-6,CT Unspecified body region
+CT,Thorax^THORACIC_DISSECTION (Adult),42277-4,CT Chest and Abdomen WO and W contrast IV
+CT,Thorax^XL_CAP_WITH (Adult),72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,Thorax^XL_CHEST_WO (Adult),29252-4,CT Chest WO contrast
+CT,TUMOR LOCALWHOLE BODY SINGLE,47366-0,CT Chest limited WO contrast
+CT,Vascular^3_PULMONARY_VEIN (Adult),25045-6,CT Unspecified body region
+CT,Vascular^CT_PE (Adult),25045-6,CT Unspecified body region
+CT,Vascular^CTA_CHEST_GR (Adult),25045-6,CT Unspecified body region
+CR,[no match],43468-8,XR Unspecified body region Views
+CR,CHEST AP PORT,24632-2,Portable XR Chest Views AP
+CR,CHEST AP VIEWONLY,24632-2,Portable XR Chest Views AP
+CR,XR CHEST PA AND LATERAL,42272-5,XR Chest PA and Lateral
+CR,Chest 2V,36643-5,XR Chest 2 Views
+CR,XR CHEST 1 VIEW AP,36572-6,XR Chest AP
+CR,CHEST AP PORTABLE,36589-0,Portable XR Chest AP single view
+CR,CHEST AP PORT CENTRAL LINE PL,24632-2,Portable XR Chest Views AP
+CR,FLAT PLATE OF ABDOMEN PORTABLE,36588-2,Portable XR Abdomen AP
+CR,CHEST 1V,36554-4,XR Chest Single view
+CR,CHEST AP VIEW ONLY,36572-6,XR Chest AP
+CR,XR CHEST AP PORTABLE,24632-2,Portable XR Chest Views AP
+CR,XR CHEST PA OR AP SINGLE VIEW,36554-4,XR Chest Single view
+CR,CHEST ROUTINE PA AP AND LATERAL,30745-4,XR Chest Views
+CR,DG CHEST 2V,36643-5,XR Chest 2 Views
+CR,XR RIBS RIGHT WITH CHEST AP OR PA - SINGLE VIEW,24899-7,XR Ribs Views
+CR,CHEST AP CENTRAL LINE PL PORTABLE,24632-2,Portable XR Chest Views AP
+CR,XR RIBS LEFT WITH CHEST AP OR PA - SINGLE VIEW,24899-7,XR Ribs Views
+CR,ABDOMEN SUPINE KUB,24799-9,XR Abdomen AP
+CR,ABD SERIES FLAT AND ERECT PORTABLE,24795-7,Portable XR Abdomen Supine and Upright
+CR,Chest 1V,36554-4,XR Chest Single view
+CR,CHEST - 2 VIEW,36643-5,XR Chest 2 Views
+CR,XR ABDOMEN (W/UPRIGHT),24798-1,XR Abdomen Supine and Upright
+CR,ABDOMEN SERIES FLAT AND ERECT,24798-1,XR Abdomen Supine and Upright
+CR,"XR FOOT RIGHT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+CR,XR RIBS BILATERAL WITH CHEST - 1 VIEW,43468-8,XR Unspecified body region Views
+CR,XR RIBS LEFT -  2 VIEWS,43468-8,XR Unspecified body region Views
+CR,XR SPINE LUMBAR (AP+LAT),43468-8,XR Unspecified body region Views
+CR,"XR WRIST LEFT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+CR,ABD UPRT VIEWONLY,43468-8,XR Unspecified body region Views
+CR,CODE T CHEST AP PORTABLE,43468-8,XR Unspecified body region Views
+CR,Hip R,43468-8,XR Unspecified body region Views
+CR,Ribs L,43468-8,XR Unspecified body region Views
+CR,XR CHEST AP ONLY,43468-8,XR Unspecified body region Views
+CR,"XR FOOT LEFT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+CR,XR HIP LEFT 2-3 VIEWS WWO PELVIS,43468-8,XR Unspecified body region Views
+CR,XR HIP RIGHT 2-3 VIEWS WWO PELVIS,43468-8,XR Unspecified body region Views
+CR,XR KNEE LT 3 VIEWS,43468-8,XR Unspecified body region Views
+CR,XR KNEE LT 4 OR MORE VIEWS,43468-8,XR Unspecified body region Views
+CR,XR LOWER LEG (TIBIA/FIBULA) LEFT,43468-8,XR Unspecified body region Views
+CR,XR RIBS RIGHT - 2 VIEWS,43468-8,XR Unspecified body region Views
+CR,XR SPINE CERVICAL (AP + LAT),43468-8,XR Unspecified body region Views
+CR,ABD SUPINE LATERAL,43468-8,XR Unspecified body region Views
+CR,ABDOMEN SERIES FLAT AND ERECT PORTABLE,43468-8,XR Unspecified body region Views
+CR,Chest,43468-8,XR Unspecified body region Views
+CR,CHEST,43468-8,XR Unspecified body region Views
+CR,CHEST AP INFANT PORTABLE,43468-8,XR Unspecified body region Views
+CR,CHEST OVER PENETRATED PA AP PORTABLE,43468-8,XR Unspecified body region Views
+CR,CHEST ROUTINE PA/AP AND LATERAL,43468-8,XR Unspecified body region Views
+CR,Femur / Joints L,43468-8,XR Unspecified body region Views
+CR,Knee Lt.,43468-8,XR Unspecified body region Views
+CR,LT Foot,43468-8,XR Unspecified body region Views
+CR,Lumbar spine,43468-8,XR Unspecified body region Views
+CR,Ribs bilat,43468-8,XR Unspecified body region Views
+CR,Ribs R,43468-8,XR Unspecified body region Views
+CR,Shoulder L,43468-8,XR Unspecified body region Views
+CR,Thoracic spine,43468-8,XR Unspecified body region Views
+CR,TRAUMA CHEST AP PORTABLE,43468-8,XR Unspecified body region Views
+CR,"XR ACUTE ABDOMEN (SUPINE,UPRIGHT,AND 1 VIEW CHEST)",43468-8,XR Unspecified body region Views
+CR,"XR ANKLE RIGHT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+CR,XR CHEST 2 VIEWS PA AND LATERAL,43468-8,XR Unspecified body region Views
+CR,XR CHEST LEFT DECUBITUS VIEW (RIGHT SIDE UP),43468-8,XR Unspecified body region Views
+CR,"XR HAND LEFT (LIMITED: AP,LAT)",43468-8,XR Unspecified body region Views
+CR,"XR HAND LEFT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+CR,"XR HAND RIGHT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+CR,XR HUMERUS LEFT,43468-8,XR Unspecified body region Views
+CR,XR IVP W TOMOGRAMS,43468-8,XR Unspecified body region Views
+CR,XR SCAPULA RIGHT,43468-8,XR Unspecified body region Views
+CR,XR SHOULDER LEFT (COMPLETE: IR/ER/GRASHEY/Y/AXILLARY),43468-8,XR Unspecified body region Views
+CR,XR SHOULDER RIGHT (COMPLETE: IR/ER/GRASHEY/Y/AXILLARY),43468-8,XR Unspecified body region Views
+CR,XR SPINE CERVICAL (AP+LAT+OBLS+SWIM+ODONTOID),43468-8,XR Unspecified body region Views
+CR,"XR SPINE LUMBAR (AP+LAT, SUPINE+UPRIGHT)",43468-8,XR Unspecified body region Views
+CR,XR SPINE LUMBAR (AP+LAT+OBLIQUES),43468-8,XR Unspecified body region Views
+CR,XR SPINE LUMBAR (LATERAL ONLY  FLEX/EX),43468-8,XR Unspecified body region Views
+CR,XR SPINE LUMBAR (LATERAL ONLY),43468-8,XR Unspecified body region Views
+CR,XR SPINE THORACIC (3 VIEWS - AP+LAT BENDING),43468-8,XR Unspecified body region Views
+CR,XR SPINE THORACIC (3 VIEWS),43468-8,XR Unspecified body region Views
+CR,XR THUMB RIGHT,43468-8,XR Unspecified body region Views
+CR,"XR WRIST RIGHT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+DX,[no match],43468-8,XR Unspecified body region Views
+DX,XR CHEST 1 VIEW AP,36572-6,XR Chest AP
+DX,CHEST AP PORT,24632-2,Portable XR Chest Views AP
+DX,XR CHEST PA AND LATERAL,36643-5,XR Chest 2 Views
+DX,CHEST AP VIEWONLY,36572-6,XR Chest AP
+DX,XR CHEST AP PORTABLE,36572-6,XR Chest AP
+DX,XR CHEST 2 VIEWS PA AND LATERAL,36643-5,XR Chest 2 Views
+DX,CHEST AP PORT CENTRAL LINE PL,24632-2,Portable XR Chest Views AP
+DX,FLAT PLATE OF ABDOMEN PORTABLE,36588-2,Portable XR Abdomen AP
+DX,Chest children,36687-2,XR Chest AP and Lateral
+DX,XR CHEST AP ONLY,36572-6,XR Chest AP
+DX,XR CHEST PA OR AP SINGLE VIEW,36554-4,XR Chest Single view
+DX,ABDOMEN SUPINE KUB,24799-9,XR Abdomen AP
+DX,XR KNEE LT 3 VIEWS,43468-8,XR Unspecified body region Views
+DX,XR SPINE LUMBAR (AP+LAT),43468-8,XR Unspecified body region Views
+DX,ABD SERIES FLAT AND ERECT PORTABLE,43468-8,XR Unspecified body region Views
+DX,DG CHEST 2V,43468-8,XR Unspecified body region Views
+DX,DG RIBS BILAT 3V,43468-8,XR Unspecified body region Views
+DX,XR ACUTE ABDOMINAL SERIES W PA CHEST PORTABLE,43468-8,XR Unspecified body region Views
+DX,XR CHEST PA ONLY,43468-8,XR Unspecified body region Views
+DX,XR CHEST PA OR AP POST IR BIOPSY-SINGLE VIEW,43468-8,XR Unspecified body region Views
+DX,"XR FOOT RIGHT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+DX,XR RIBS LEFT WITH CHEST AP OR PA - SINGLE VIEW,43468-8,XR Unspecified body region Views
+DX,XR RIBS RIGHT WITH CHEST AP OR PA - SINGLE VIEW,43468-8,XR Unspecified body region Views
+DX,XR SHOULDER RT 1 VIEW,43468-8,XR Unspecified body region Views
+DX,"XR SPINE LUMBAR (AP+LAT, SUPINE+UPRIGHT)",43468-8,XR Unspecified body region Views
+DX,XR SPINE THORACIC (AP+LAT),43468-8,XR Unspecified body region Views
+DX,ABD UPRT VIEWONLY,43468-8,XR Unspecified body region Views
+DX,Knee - 3 Views,43468-8,XR Unspecified body region Views
+DX,XR ABDOMEN 1 VIEW,43468-8,XR Unspecified body region Views
+DX,"XR ANKLE RIGHT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+DX,"XR CHEST DECUBITUS VIEWS, LEFT",43468-8,XR Unspecified body region Views
+DX,XR CHEST LATERAL ONLY,43468-8,XR Unspecified body region Views
+DX,XR FEET BILATERAL,43468-8,XR Unspecified body region Views
+DX,XR FOREARM (RADIUS/ULNA) LEFT,43468-8,XR Unspecified body region Views
+DX,XR HANDS BILATERAL (1-2 VIEWS),43468-8,XR Unspecified body region Views
+DX,XR HIP RIGHT 1 VIEW,43468-8,XR Unspecified body region Views
+DX,XR HIP RIGHT 2-3 VIEWS WWO PELVIS,43468-8,XR Unspecified body region Views
+DX,XR HUMERUS LEFT,43468-8,XR Unspecified body region Views
+DX,XR KNEE LT 1 OR 2 VIEWS,43468-8,XR Unspecified body region Views
+DX,XR KNEES BILATERAL STANDING (3 VIEWS),43468-8,XR Unspecified body region Views
+DX,XR LOWER LEG (TIBIA/FIBULA) LEFT,43468-8,XR Unspecified body region Views
+DX,XR PELVIS COMPLETE MINIMUM 3 VIEWS,43468-8,XR Unspecified body region Views
+DX,XR PELVIS LIMITED 1 OR 2 VIEW,43468-8,XR Unspecified body region Views
+DX,"XR RIBS INCLUDING PA CHEST XR, BILATERAL",43468-8,XR Unspecified body region Views
+DX,"XR RIBS INCLUDING PA CHEST XR, LEFT",43468-8,XR Unspecified body region Views
+DX,"XR RIBS INCLUDING PA CHEST XR, RIGHT",43468-8,XR Unspecified body region Views
+DX,"XR RIBS, LEFT",43468-8,XR Unspecified body region Views
+DX,XR SHOULDER 2 OR MORE VIEW,43468-8,XR Unspecified body region Views
+DX,XR SHOULDER RT 2 OR MORE VIEWS,43468-8,XR Unspecified body region Views
+DX,XR SPINE CERVICAL (4 VIEWS - AP+LAT+FLEX/EX)*,43468-8,XR Unspecified body region Views
+DX,XR SPINE CERVICAL (LATERAL ONLY - FLEX/EX),43468-8,XR Unspecified body region Views
+DX,"XR SPINE THORACIC (AP+LAT, SUP/UPRIGHT)",43468-8,XR Unspecified body region Views
+DX,XR TOES RIGHT (SPECIFY DIGITS),43468-8,XR Unspecified body region Views
+DX,"XR WRIST LEFT (LIMITED: AP,LAT)",43468-8,XR Unspecified body region Views
+DX,"XR WRIST LEFT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+DX,"XR WRIST RIGHT (ROUTINE: AP,LAT,OBL)",43468-8,XR Unspecified body region Views
+DX,XR WRIST RIGHT (SCAPHOID VIEW),43468-8,XR Unspecified body region Views
+PT,[no match],44136-0,PT Unspecified body region
+PT,PET CT FDG IMAG SKULL TO THIGH,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+MR,[no match],25056-3,MR Unspecified body region
+US,[no match],25061-3,US Unspecified body region
+MG,[no match],36625-2,MG Breast Views
+NM,[no match],49118-3,NM Unspecified body region Views
+ST,[no match],43526-3,SPECT Unspecified body region

@@ -1,0 +1,52 @@
+﻿LOINC code,L-Long Common Name,L-Method,L-System,Rad.Timing
+25045-6,CT Unspecified body region,CT,XXX,
+24628-0,CT Chest W contrast IV,CT,Chest,W
+24726-2,CT Head WO and W contrast IV,CT,Head,WO & W
+24866-6,CT Pelvis W contrast IV,CT,Pelvis,W
+29252-4,CT Chest WO contrast,CT,Chest,WO
+30592-0,CT Cervical spine WO contrast,CT,Chest,WO
+30598-7,CT Chest WO and W contrast IV,CT,Chest,WO & W
+30799-1,CT Head WO contrast,CT,Head,WO
+36266-5,CTA Chest vessels W contrast IV,CT.angio,Chest>Chest vessels,W
+36267-3,CT Abdomen WO and W contrast IV,CT,Abdomen,WO & W
+36424-0,CT Abdomen WO contrast,CT,Abdomen,WO
+36813-4,CT Abdomen and Pelvis W contrast IV,CT,Abdomen,W
+36952-0,CT Abdomen and Pelvis WO contrast,CT,Abdomen+Pelvis,WO
+42274-1,CT Abdomen and Pelvis WO and W contrast IV,CT,Abdomen+Pelvis,WO & W
+42277-4,CT Chest and Abdomen WO and W contrast IV,CT,Chest+Abdomen,WO & W
+46305-9,CT Whole body,CT,Whole body,
+47366-0,CT Chest limited WO contrast,CT,Chest,WO
+69908-2,CTA Abdominal vessels and Pelvis vessels W contrast IV,CT ,Abdomen>Abdominal vessels & Pelvis>Pelvis vessels,W
+72249-6,CT Facial bones WO contrast,CT,Head>Facial bones,WO
+72253-8,CT Chest and Abdomen and Pelvis WO contrast,CT,Chest+Abdomen+Pelvis,WO
+72254-6,CT Chest and Abdomen and Pelvis W contrast IV,CT,Chest+Abdomen+Pelvis,W
+79073-3,CTA Heart and Coronary arteries W contrast IV,CT.angio,Chest>Heart+Coronary arteries,W
+79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV,CT.angio,Chest,W
+79086-5,CT Chest for screening WO contrast,CT,Chest,WO
+79087-3,CT Heart and Coronary arteries for calcium scoring WO contrast,CT,Chest>Heart+Coronary arteries,WO
+79103-8,CT Abdomen W contrast IV,CT,Abdomen,W
+82679-2,CTA Abdominal vessels and Pelvis vessels WO and W contrast IV,CT ,Abdomen>Abdominal vessels & Pelvis>Pelvis vessels,WO & W
+83294-9,CT Thoracic and lumbar spine W contrast IV,CT,Chest>Spine.thoracic & Abdomen>Spine.lumbar,W
+86971-9,CTA Chest and abdominal vessels WO and W contrast IV,CT.angio,Chest>Chest vessels & Abdomen>Abdominal vessels,WO & W
+87279-6,CT Chest for screening,CT,Chest,
+43468-8,XR Unspecified body region Views,XR,XXX,
+24632-2,Portable XR Chest Views AP,XR.portable,Chest,
+24795-7,Portable XR Abdomen Supine and Upright,XR.portable,Abdomen,
+24798-1,XR Abdomen Supine and Upright,XR,Abdomen,
+24799-9,XR Abdomen AP,XR,Abdomen,
+24899-7,XR Ribs Views,XR,Chest>Ribs,
+30745-4,XR Chest Views,XR,Chest,
+36554-4,XR Chest Single view,XR,Chest,
+36572-6,XR Chest AP,XR,Chest,
+36588-2,Portable XR Abdomen AP,XR.portable,Abdomen,
+36589-0,Portable XR Chest AP single view,XR.portable,Chest,
+36643-5,XR Chest 2 Views,XR,Chest,
+36687-2,XR Chest AP and Lateral,XR,Chest,
+42272-5,XR Chest PA and Lateral,XR,Chest,
+44136-0,PT Unspecified body region,PT,XXX,W
+81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV,PT+CT,Whole body,W
+25056-3,MR Unspecified body region,MR,XXX,
+25061-3,US Unspecified body region,US,XXX,
+36625-2,MG Breast Views,MG,Breast,
+49118-3,NM Unspecified body region Views,NM,XXX,W
+43526-3,SPECT Unspecified body region,NM.SPECT,XXX,W
