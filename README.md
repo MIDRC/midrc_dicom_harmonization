@@ -4,7 +4,7 @@
 
 This repository is intended to maintain the resources related to harmonization of DICOM attributes as part of MIDRC Data Quality and Harmonization working group.
 
-Content and structure of the repository are open for revisions and suggestions. This is just an experiment in an attempt to improve communication between the parties involved in the harmonization effort, and facilitate visibility into the current status, per discussion at the DQH meeting on August 11, 2021.
+Content and structure of the repository are open for revisions and suggestions. This repository was set up following the discussion and decisons made at the MIDRC DQH meeting on August 11, 2021.
 
 ## Organization
 
