@@ -167,6 +167,23 @@ CT,CT ABD AND PELVIS WITH IV CONT,36813-4,CT Abdomen and Pelvis W contrast IV
 CT,CT ABD AND PELVIS WITH IV CONTRAST,36813-4,CT Abdomen and Pelvis W contrast IV
 CT,CT ABD/PEL WITH IV CONTRAST,36813-4,CT Abdomen and Pelvis W contrast IV
 CT,CT ABDOMEN PELVIS W CONTRAST (ROUTINE),36813-4,CT Abdomen and Pelvis W contrast IV
+CT,CT CHEST PULMONARY EMBOLISM W CONTRAST,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST PULMONARY EMB,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST ABDOMEN PELVIS W CONTRAST,72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CTA CHEST PULMONARY ANGIOGRAPHY W CONTRAST,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST ABDOMEN PELVIS WO CONTRAST,72253-8,CT Chest and Abdomen and Pelvis WO contrast
+CT,JCCI CT CHEST,24627-2,CT Chest
+CT,CT THORAX PE EXAM,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,Abdomen^STONE_STUDY_FULL (Adult),36952-0,CT Abdomen and Pelvis WO contrast
+CT,CTA CHEST PULMONARY AN,79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT,CT CHEST LUNG CANCER SCREENING WITHOUT CONTRAST ANNUAL,79086-5,CT Chest for screening WO contrast
+CT,"THORAX/ABDOMEN/PELVIS, CONT",72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CARDIAC OP,58744-4,CT Heart
+CT,JCCI CT CHEST WITHOUT,29252-4,CT Chest WO contrast
+CT,CT Chest w/o IV Contrast,29252-4,CT Chest WO contrast
+CT,CT CAP W CONTRAST,72254-6,CT Chest and Abdomen and Pelvis W contrast IV
+CT,CT CHEST ABDOMEN PELVIS W WO CONTRAST,72252-0,CT Chest and Abdomen and Pelvis WO and W contrast IV
+CT,CT ANGIOGRAPHY NECK,"	36234-3",CTA Neck vessels W contrast IV
 "CR, DX",[blank],43468-8,XR Unspecified body region Views
 "CR, DX",FLAT PLATE OF ABDOMEN PORTABLE,36588-2,Portable XR Abdomen AP
 "CR, DX",ABD SERIES FLAT AND ERECT PORTABLE,24795-7,Portable XR Abdomen Supine and Upright
@@ -232,38 +249,59 @@ CT,CT ABDOMEN PELVIS W CONTRAST (ROUTINE),36813-4,CT Abdomen and Pelvis W contra
 "CR, DX",DPCXR,30745-4,XR Chest Views
 "CR, DX",XR RIBS LEFT WITH CHEST AP OR PA - SINGLE VIEW,24899-7,XR Ribs Views
 "CR, DX",XR RIBS RIGHT WITH CHEST AP OR PA - SINGLE VIEW,24899-7,XR Ribs Views
+"CR, DX",XR CHEST 1 VW PORTABLE,36589-0,Portable XR Chest AP single view
+"CR, DX",XR CHEST AP PA LATERAL 2 VW,36643-5,XR Chest 2 Views
+"CR, DX","XR CHEST 1 VW, FRONTAL",36554-4,XR Chest Single view
+"CR, DX",Portable Chest,36589-0,Portable XR Chest AP single view
+"CR, DX","XR CHEST 2 VIEWS, FRONTAL AND LATERAL",36643-5,XR Chest 2 Views
+"CR, DX",XR CHEST 1 VW,36554-4,XR Chest Single view
+"CR, DX","XR CHEST 2 VIEWS, FRONTAL AND LATERAL;",36643-5,XR Chest 2 Views
+"CR, DX",CHEST ROUTINE,30745-4,XR Chest Views
+"CR, DX",Ribs L,24899-7,XR Ribs Views
+"CR, DX",XR ABDOMEN 1 VIEW,36550-2,XR Abdomen Single view
+"CR, DX","CHEST, PA AND LAT",42272-5,XR Chest PA and Lateral
+"CR, DX",XR RIBS RIGHT WITH PA CHEST 3+ VW,42165-1,XR Ribs Views and Chest PA
+"CR, DX",Adult Chest - 1 View,36554-4,XR Chest Single view
+"CR, DX",XR CHEST PICC VERIFICATION,36554-4,XR Chest Single view
 [blank],CHEST PA & LATERAL (RAD)-CS,42272-5,XR Chest PA and Lateral
 [blank],CHEST PORT 1 VIEW (RAD)-CS,36589-0,Portable XR Chest AP single view
 [blank],XR CHEST PA AND LATERAL,42272-5,XR Chest PA and Lateral
 [blank],XR PORT CHEST 1V,36589-0,Portable XR Chest AP single view
 [blank],XR CHEST PA/LATERAL,42272-5,XR Chest PA and Lateral
-PT,[blank],44136-0,PT Unspecified body region
-PT,PET CT FDG IMAG SKULL TO THIGH,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET MULTIPLE MYELOMA (,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET SARCOIDOSIS WITH N,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET PANCREATIC CANCER,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,NM PET CANCER ANY SITE,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET BREAST CANCER (W/L,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET BREAST CANCER (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET MULTIPLE MYELOMA (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET COLON OR RECTAL CA,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET PANCREATIC CANCER (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET CT FOR SARCOIDOSIS,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET THYROID CANCER (W/,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET CT IMG ANY SITE NO,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET^1HPPETCT_WholeBody (Adult),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET ENDOMETRIAL OR CER,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET ENDOMETRIAL OR CERVICAL CANCER (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET ESOPHAGEAL OR GAST,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET LUNG CANCER OR PUL,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET LUNG CANCER OR PULMONARY NODULE (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET LYMPHOMA HODGKINS,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET LYMPHOMA HODGKINS (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET LYMPHOMA NON HODGK,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
-PT,PET LYMPHOMA NON HODGKINS (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",[blank],44136-0,PT Unspecified body region
+"PT, CTPT",PET CT FDG IMAG SKULL TO THIGH,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET MULTIPLE MYELOMA (,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET SARCOIDOSIS WITH N,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET PANCREATIC CANCER,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",NM PET CANCER ANY SITE,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET BREAST CANCER (W/L,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET BREAST CANCER (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET MULTIPLE MYELOMA (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET COLON OR RECTAL CA,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET PANCREATIC CANCER (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET CT FOR SARCOIDOSIS,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET THYROID CANCER (W/,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET CT IMG ANY SITE NO,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET^1HPPETCT_WholeBody (Adult),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET ENDOMETRIAL OR CER,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET ENDOMETRIAL OR CERVICAL CANCER (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET ESOPHAGEAL OR GAST,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET LUNG CANCER OR PUL,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET LUNG CANCER OR PULMONARY NODULE (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET LYMPHOMA HODGKINS,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET LYMPHOMA HODGKINS (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET LYMPHOMA NON HODGK,81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+"PT, CTPT",PET LYMPHOMA NON HODGKINS (W/LOW DOSE CT),81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
 MR,[blank],25056-3,MR Unspecified body region
+MR,MR TOTAL SPINE WITH AND WITHOUT CONTR,30855-1,MR Cervical and thoracic and lumbar spine WO and W contrast IV
+MR,"MR FACE, NASO, NECK WITH AND WITHOUT",82131-4,MR Face and Neck WO and W contrast IV
+MR,MR SPINE LUMBAR WO CONTRAST,30679-5,MR Lumbar spine WO contrast
+MR,MR TOTAL SPINE WITHOUT CONTRAST,30854-4,MR Cervical and thoracic and lumbar spine WO contrast
+MR,L-SPINE^GREENSBORO,"	24968-0",MR Lumbar spine
+MR,SPINE^L-SPINE,"	24968-0",MR Lumbar spine
 US,[blank],25061-3,US Unspecified body region
 MG,[blank],36625-2,MG Breast Views
 NM,[blank],49118-3,NM Unspecified body region Views
 ST,[blank],43526-3,SPECT Unspecified body region
 [blank],BRONCHOSCOPY,18744-3,Bronchoscopy study
+RF,BRONCHOSCOPY,35889-5,RF Guidance for bronchoscopy of Chest
