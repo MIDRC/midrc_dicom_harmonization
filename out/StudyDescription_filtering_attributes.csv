@@ -1,5 +1,5 @@
 ﻿LOINC code,L-Long Common Name,L-Method,L-System,Rad.Timing,MIDRC-System
-18744-3,Bronchoscopy study,Bronchoscopy,Respiratory system,,Respiratory system
+35889-5,RF Guidance for bronchoscopy of Chest,RF,Chest,,Chest
 36813-4,CT Abdomen and Pelvis W contrast IV,CT,Abdomen,W,Abdomen
 42274-1,CT Abdomen and Pelvis WO and W contrast IV,CT,Abdomen+Pelvis,WO & W,Abdomen+Pelvis
 36952-0,CT Abdomen and Pelvis WO contrast,CT,Abdomen+Pelvis,WO,Abdomen+Pelvis
@@ -8,10 +8,12 @@
 36267-3,CT Abdomen WO and W contrast IV,CT,Abdomen,WO & W,Abdomen
 36424-0,CT Abdomen WO contrast,CT,Abdomen,WO,Abdomen
 30592-0,CT Cervical spine WO contrast,CT,Chest,WO,Chest
+24627-2,CT Chest,CT,Chest,,Chest
 87869-4,CT Chest and Abdomen and Pelvis,CT,Chest+Abdomen+Pelvis,,Chest+Abdomen+Pelvis
 72254-6,CT Chest and Abdomen and Pelvis W contrast IV,CT,Chest+Abdomen+Pelvis,W,Chest+Abdomen+Pelvis
 83299-8,CT Chest and Abdomen and Pelvis WO and W contrast IV and CTA Thoracic and abdominal aorta WO and W contrast IV,CT && CT.angio,Chest+Abdomen+Pelvis && Chest>Aorta.thoracic & Abdomen>Aorta.abdominal,WO & W,Chest+Abdomen+Pelvis && Chest>Aorta.thoracic & Abdomen>Aorta.abdominal
 72253-8,CT Chest and Abdomen and Pelvis WO contrast,CT,Chest+Abdomen+Pelvis,WO,Chest+Abdomen+Pelvis
+72252-0,CT Chest and Abdomen and Pelvis WO and W contrast IV,CT,Chest+Abdomen+Pelvis,WO & W,Chest+Abdomen+Pelvis
 42275-8,CT Chest and Abdomen W contrast IV,CT,Chest+Abdomen,W,Chest+Abdomen
 42277-4,CT Chest and Abdomen WO and W contrast IV,CT,Chest+Abdomen,WO & W,Chest+Abdomen
 42276-6,CT Chest and Abdomen WO contrast,CT,Chest+Abdomen,WO,Chest+Abdomen
@@ -49,6 +51,12 @@
 79077-4,CTA Pulmonary arteries for pulmonary embolus W contrast IV,CT.angio,Chest,W,Chest
 36625-2,MG Breast Views,MG,Breast,,Breast
 25056-3,MR Unspecified body region,MR,XXX,,Unspecified
+30855-1,MR Cervical and thoracic and lumbar spine WO and W contrast IV,MR,"
+Neck>Spine.cervical & Chest>Spine.thoracic & Abdomen>Spine.lumbar",WO & W,
+30854-4,MR Cervical and thoracic and lumbar spine WO contrast,MR,Neck>Spine.cervical & Chest>Spine.thoracic & Abdomen>Spine.lumbar,WO,
+82131-4,MR Face and Neck WO and W contrast IV,MR,Head>Face & Neck,WO & W,
+"	24968-0",MR Lumbar spine,MR,Abdomen>Spine.lumbar,,
+30679-5,MR Lumbar spine WO contrast,MR,Abdomen>Spine.lumbar,WO,
 49118-3,NM Unspecified body region Views,NM,XXX,W,Unspecified
 81555-5,PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV,PT+CT,Whole body,W,Whole body
 36588-2,Portable XR Abdomen AP,XR.portable,Abdomen,,Abdomen
@@ -60,6 +68,7 @@
 44136-0,PT Unspecified body region,PT,XXX,W,Unspecified
 43526-3,SPECT Unspecified body region,NM.SPECT,XXX,W,Unspecified
 25061-3,US Unspecified body region,US,XXX,,Unspecified
+36550-2,XR Abdomen Single view,XR,Abdomen,,Abdomen
 24799-9,XR Abdomen AP,XR,Abdomen,,Abdomen
 24798-1,XR Abdomen Supine and Upright,XR,Abdomen,,Abdomen
 36643-5,XR Chest 2 Views,XR,Chest,,Chest
@@ -72,3 +81,4 @@
 30745-4,XR Chest Views,XR,Chest,,Chest
 24899-7,XR Ribs Views,XR,Chest>Ribs,,Chest>Ribs
 43468-8,XR Unspecified body region Views,XR,XXX,,Unspecified
+42165-1,XR Ribs Views and Chest PA,XR,Chest>Ribs && Chest,,Chest>Ribs && Chest
