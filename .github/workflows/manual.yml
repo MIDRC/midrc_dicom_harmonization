@@ -1,0 +1,42 @@
+name: Manually triggered workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.8.15]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas
+        python --version
+        ls .
+    - name: Run diff script
+      run: |
+        python --version
+        python util/analyze_in_out.py .
+    - name: Get current date
+      id: date
+      run: echo "name=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: update pending
+        committer: GitHub <noreply@github.com>
+        author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+        signoff: false
+        branch: update-pending
+        delete-branch: true
+        title: pending folder update
