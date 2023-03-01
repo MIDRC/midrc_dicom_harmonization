@@ -1,11 +1,12 @@
-name: Manually triggered workflow
+name: Update the list of unmapped values
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, reopened]
+  push:
+    branches:
+      - main
 
 jobs:
-  say_hello:
+  run_diff:
     runs-on: ubuntu-latest
 
     strategy:
@@ -13,9 +14,9 @@ jobs:
         python-version: [3.8.15]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Set up python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
@@ -28,17 +29,23 @@ jobs:
       run: |
         python --version
         python util/analyze_in_out.py .
-    - name: Get current date
-      id: date
-      run: echo "name=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+    - name: Get the differences
+      run: |
+        git diff >> ${{ env.DIFFS }}
+      env:
+        DIFFS: ${{ github.workspace }}/diffs.txt        
+    - name: Add pull request comment
+      uses: thollander/actions-comment-pull-request@v2
+      with:
+        filePath: ${{ env.DIFFS }}
     - name: Create Pull Request
       id: cpr
       uses: peter-evans/create-pull-request@v3
       with:
-        commit-message: update pending
+        commit-message: Update unmapped StudyDescription list
         committer: GitHub <noreply@github.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         signoff: false
-        branch: update-pending
+        branch: example-patches
         delete-branch: true
-        title: pending folder update
+        title: Unmapped StudyDescriptions list updated
