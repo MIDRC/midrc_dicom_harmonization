@@ -29,15 +29,6 @@ jobs:
       run: |
         python --version
         python util/analyze_in_out.py .
-    - name: Get the differences
-      run: |
-        git diff >> ${{ env.DIFFS }}
-      env:
-        DIFFS: ${{ github.workspace }}/diffs.txt        
-    - name: Add pull request comment
-      uses: thollander/actions-comment-pull-request@v2
-      with:
-        filePath: ${{ env.DIFFS }}
     - name: Create Pull Request
       id: cpr
       uses: peter-evans/create-pull-request@v3
