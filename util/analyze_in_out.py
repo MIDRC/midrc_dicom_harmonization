@@ -41,13 +41,12 @@ for contributor in contributors:
       diff_df["frequency"] = "N/A"
 
     if all_diffs is None:
-      all_diffs = diff_df[["StudyDescription", "Modality_x", "frequency", "Contributor"]]
+      all_diffs = diff_df[["StudyDescription", "Modality", "frequency", "Contributor"]]
     else:
-      all_diffs = pd.concat([all_diffs, diff_df[['StudyDescription', 'Modality_x','frequency', 'Contributor']]])
+      all_diffs = pd.concat([all_diffs, diff_df[['StudyDescription', 'Modality','frequency', 'Contributor']]])
 
 # rename columns
 all_diffs = all_diffs.rename(columns={"frequency_x": "frequency"})
-all_diffs = all_diffs.rename(columns={"Modality_x": "Modality"})
 
 all_diffs.sort_values(by=["frequency"], inplace=True)
 
