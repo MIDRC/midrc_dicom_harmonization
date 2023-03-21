@@ -48,6 +48,6 @@ for contributor in contributors:
 # rename columns
 all_diffs = all_diffs.rename(columns={"frequency_x": "frequency"})
 
-all_diffs.sort_values(by=["frequency"], inplace=True)
+all_diffs.sort_values(by=["frequency"], inplace=True, ascending=False)
 
 all_diffs.to_csv(os.path.join(sys.argv[1], "pending", "StudyDescription_diffs.csv"), index=False)
