@@ -6,7 +6,19 @@ contributors = ["ACR", "RSNA", "TCIA"]
 
 in_content = {}
 
+# read mapped values of StudyDescription/Modality combinations
 out_df = pd.read_csv(os.path.join(sys.argv[1], "out", "StudyDescription_mapping_table.csv"))
+
+# remove spaces in Modality column
+out_df["Modality"] = out_df["Modality"].str.replace(" ", "")
+
+# split Modality column into array by comma 
+out_df["Modality"] = out_df["Modality"].str.split(",")
+
+# explode Modality column into multiple rows
+out_df = out_df.explode("Modality")
+
+print(out_df)
 
 all_diffs = None
 
