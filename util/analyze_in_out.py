@@ -2,7 +2,7 @@ import pandas as pd
 import sys, os
 import re
 
-contributors = ["ACR", "RSNA", "TCIA"]
+contributors = ["ACR", "RSNA", "TCIA", "Gen3"]
 
 in_content = {}
 
