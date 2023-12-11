@@ -26,8 +26,8 @@ pattern = r"^\s+|\s+$|\s+(?=\s)"
 
 for contributor in contributors:
     print(f"Loading {contributor}")
-    if contributor == "TCIA":
-      print("Parse TCIA")
+    if contributor in ["TCIA","Gen3"]:
+      print("Parse TCIA/Gen3")
       in_df = pd.read_csv(os.path.join(sys.argv[1], "in", f"StudyDescriptions_{contributor}.tsv"), sep="\t")
     else:
       in_df = pd.read_csv(os.path.join(sys.argv[1], "in", f"StudyDescriptions_{contributor}.csv"))
