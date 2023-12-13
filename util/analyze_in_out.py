@@ -2,8 +2,6 @@ import pandas as pd
 import sys, os
 import re
 
-contributors = ["ACR", "RSNA", "TCIA", "Gen3"]
-
 in_content = {}
 
 # read mapped values of StudyDescription/Modality combinations
@@ -24,42 +22,43 @@ all_diffs = None
 
 pattern = r"^\s+|\s+$|\s+(?=\s)"
 
-for contributor in contributors:
-    print(f"Loading {contributor}")
-    if contributor in ["TCIA","Gen3"]:
-      print("Parse TCIA/Gen3")
-      in_df = pd.read_csv(os.path.join(sys.argv[1], "in", f"StudyDescriptions_{contributor}.tsv"), sep="\t")
-    else:
-      in_df = pd.read_csv(os.path.join(sys.argv[1], "in", f"StudyDescriptions_{contributor}.csv"))
+   
+fileName = os.path.join(sys.argv[1], "in", f"StudyDescriptions_Gen3.tsv")
 
-    # clean up spaces
-    in_df["StudyDescription"] = in_df["StudyDescription"].str.replace(pattern, " ")
-    out_df["StudyDescription"] = out_df["StudyDescription"].str.replace(pattern, " ")
+if os.path.exists(fileName):
+  
+  print(f"Loading ...")
+  in_df = pd.read_csv(fileName, sep="\t")
 
-    # capitalize
-    in_df['StudyDescription'] = in_df['StudyDescription'].str.upper()
-    out_df['StudyDescription'] = out_df['StudyDescription'].str.upper()
+  # clean up spaces
+  in_df["StudyDescription"] = in_df["StudyDescription"].str.replace(pattern, " ")
+  out_df["StudyDescription"] = out_df["StudyDescription"].str.replace(pattern, " ")
 
-    diff_df = pd.merge(in_df, out_df, on=["StudyDescription", "Modality"], how="outer", indicator=True)
-    diff_df = diff_df[diff_df["_merge"] == "left_only"]
+  # capitalize
+  in_df['StudyDescription'] = in_df['StudyDescription'].str.upper()
+  out_df['StudyDescription'] = out_df['StudyDescription'].str.upper()
 
-    #print("Merge result")
-    #print(diff_df)
-    diff_df["Contributor"] = contributor
+  diff_df = pd.merge(in_df, out_df, on=["StudyDescription", "Modality"], how="outer", indicator=True)
+  diff_df = diff_df[diff_df["_merge"] == "left_only"]
 
-    print(diff_df)
+  #print("Merge result")
+  #print(diff_df)
+  diff_df["Contributor"] = "Gen3"
 
-    if not "frequency" in diff_df.columns:
-      diff_df["frequency"] = "N/A"
+  print(diff_df)
 
-    if all_diffs is None:
-      all_diffs = diff_df[["StudyDescription", "Modality", "frequency", "Contributor"]]
-    else:
-      all_diffs = pd.concat([all_diffs, diff_df[['StudyDescription', 'Modality','frequency', 'Contributor']]])
+  if not "frequency" in diff_df.columns:
+    diff_df["frequency"] = "N/A"
 
-# rename columns
-all_diffs = all_diffs.rename(columns={"frequency_x": "frequency"})
+  if all_diffs is None:
+    all_diffs = diff_df[["StudyDescription", "Modality", "frequency", "Contributor"]]
+  else:
+    all_diffs = pd.concat([all_diffs, diff_df[['StudyDescription', 'Modality','frequency', 'Contributor']]])
 
-all_diffs.sort_values(by=["frequency"], inplace=True, ascending=False)
+# rename columns if all_diffs is not empty only
+if not all_diffs.empty:
+  all_diffs = all_diffs.rename(columns={"frequency_x": "frequency"})
 
-all_diffs.to_csv(os.path.join(sys.argv[1], "pending", "StudyDescription_diffs.csv"), index=False)
+  all_diffs.sort_values(by=["frequency"], inplace=True, ascending=False)
+
+  all_diffs.to_csv(os.path.join(sys.argv[1], "pending", "StudyDescription_diffs.csv"), index=False)
