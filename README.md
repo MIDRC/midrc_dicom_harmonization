@@ -16,6 +16,8 @@ Folders and their designations:
 
 * `out`: folder containing output artifacts mapping the selected DICOM attributes into harmonized values or codes. Suggested file nameing conventions: `<DICOM attribute name>_filtering_values.csv` and `<DICOM attribute name>_mapping_table.csv`.
 
+* `pending`: folder containing `StudyDescription` values that are not mapped.
+
 ## Contact
 
 This repository was initially populated by Andrey Fedorov `fedorov@bwh.harvard.edu`. DQH lead contact Paul Kinahan `kinahan@uw.edu`.
