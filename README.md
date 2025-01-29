@@ -21,3 +21,7 @@ Folders and their designations:
 ## Contact
 
 This repository was initially populated by Andrey Fedorov `fedorov@bwh.harvard.edu`. DQH lead contact Paul Kinahan `kinahan@uw.edu`.
+
+## Acknowledgement
+
+_This work was supported in part by The Medical Imaging and Data Resource Center (MIDRC), which is funded by the National Institute of Biomedical Imaging and Bioengineering (NIBIB) of the National Institutes of Health under contract 75N92020D00021/5N92023F00002 and through the Advanced Research Projects Agency for Health (ARPA-H)._
