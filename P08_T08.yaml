@@ -1,0 +1,70 @@
+version: 0.0.1
+
+tool:
+  name: LOINC Mapping Tool
+  repo_url: https://github.com/MIDRC/midrc_dicom_harmonization
+  tool_homepage: https://github.com/MIDRC/midrc_dicom_harmonization
+  documentation_url: https://example.com
+  tool_type: Script
+
+llm:
+  usesLlm: false
+  bringOwnKey: false
+
+input:
+  - name: Imaging structured 1
+    dataCategory: imaging
+    dataClass: structured
+    dataType: radiology
+    format:
+      - csv
+    dataStandard:
+      - dicom
+    proprietary: false
+    source: https://data.midrc.org/
+
+output:
+  - name: Imaging structured 1
+    dataCategory: imaging
+    dataClass: structured
+    dataType: radiology
+    format:
+      - csv
+    dataStandard:
+      - dicom
+    proprietary: false
+    source: https://data.midrc.org/
+
+license:
+  license_type: MIT
+  link: https://github.com/MIDRC/midrc_dicom_harmonization/blob/main/LICENSE
+
+funding:
+  source: Developed for MIDRC creation with NIBIB, and then generalized and converted to tool via ARPA-H BDF
+  agreement: Not specified
+  link: ""
+
+domains:
+  - Imaging
+
+credit:
+  - name: MIDRC
+    role: Developer
+    org: Medical Imaging and Data Resource Center
+    url: https://www.midrc.org/
+
+target_users:
+  primary_user:
+    user_type: researcher
+    technical_literacy_level:
+      - intermediate
+    biomedical_literacy_level:
+      - intermediate
+
+maturity:
+  beginning_maturity: 1
+  current_maturity: 8
+
+media: [{ "link": "https://youtu.be/G9ofuGQ7sOQ" }]
+
+collaborations: []
