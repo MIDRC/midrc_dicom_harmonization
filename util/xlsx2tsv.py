@@ -51,6 +51,44 @@ def load_previous_mapping(previous_file):
         return None
 
 
+def validate_column_compatibility(new_df, previous_df):
+    """
+    Validate that column names and order are identical in both dataframes.
+    
+    Args:
+        new_df: DataFrame with newly extracted data
+        previous_df: DataFrame with previous mapping data
+        
+    Returns:
+        True if columns match, False otherwise. Prints detailed error messages.
+    """
+    new_cols = list(new_df.columns)
+    prev_cols = list(previous_df.columns)
+    
+    if new_cols != prev_cols:
+        print(f"Error: Column mismatch between new and previous mappings.", file=sys.stderr)
+        print(f"\nNew mapping columns: {new_cols}", file=sys.stderr)
+        print(f"Previous mapping columns: {prev_cols}", file=sys.stderr)
+        
+        # Identify differences
+        missing_in_prev = set(new_cols) - set(prev_cols)
+        missing_in_new = set(prev_cols) - set(new_cols)
+        
+        if missing_in_prev:
+            print(f"\nColumns in new but not in previous: {list(missing_in_prev)}", file=sys.stderr)
+        if missing_in_new:
+            print(f"Columns in previous but not in new: {list(missing_in_new)}", file=sys.stderr)
+        
+        # Check order mismatch even if same columns
+        common_cols = set(new_cols) & set(prev_cols)
+        if new_cols != prev_cols and common_cols == set(new_cols) == set(prev_cols):
+            print(f"\nColumn order mismatch detected.", file=sys.stderr)
+        
+        return False
+    
+    return True
+
+
 def find_duplicates(new_df, previous_df):
     """
     Identify rows in new_df that match rows in previous_df.
@@ -194,13 +232,13 @@ def extract_excel_sheets(input_file, output_file, target_column, sheet_names,
     # rename column "Suggested LOINC Code" to "LOINC Code" and
     # "LOINC LCN" to "L-Long Common Name"
     if 'Suggested LOINC code' in combined_df.columns:
-        combined_df.rename(columns={'Suggested LOINC code': 'LOINC Code'}, inplace=True)
+        combined_df.rename(columns={'Suggested LOINC code': 'LOINC code'}, inplace=True)
     if 'LOINC LCN' in combined_df.columns:
         combined_df.rename(columns={'LOINC LCN': 'L-Long Common Name'}, inplace=True)
 
     print(combined_df.columns)
     # drop all columns except "LOINC Code", "L-Long Common Name", "Modality" and "StudyDescription"
-    columns_to_keep = ['Modality', 'StudyDescription', 'LOINC Code', 'L-Long Common Name']
+    columns_to_keep = ['Modality', 'StudyDescription', 'LOINC code', 'L-Long Common Name']
     combined_df = combined_df[[col for col in columns_to_keep if col in combined_df.columns]]
     
     print(f"\nExtraction Summary:")
@@ -214,6 +252,12 @@ def extract_excel_sheets(input_file, output_file, target_column, sheet_names,
     
     # Detect duplicates if previous file exists
     if previous_df is not None:
+        # Validate column compatibility before proceeding with merge
+        if not validate_column_compatibility(combined_df, previous_df):
+            print(f"\nError: Cannot proceed with merge due to column mismatch.", file=sys.stderr)
+            print(f"Aborting merge operation.", file=sys.stderr)
+            return combined_df, None
+        
         duplicates, unique_new = find_duplicates(combined_df, previous_df)
         
         print(f"\nDuplicate Detection Summary:")
