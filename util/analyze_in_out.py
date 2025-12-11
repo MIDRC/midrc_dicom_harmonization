@@ -5,7 +5,7 @@ import re
 in_content = {}
 
 # read mapped values of StudyDescription/Modality combinations
-out_df = pd.read_csv(os.path.join(sys.argv[1], "out", "StudyDescription_mapping_table.tsv"))
+out_df = pd.read_csv(os.path.join(sys.argv[1], "out", "StudyDescription_mapping_table.tsv"),sep='\t')
 
 # remove spaces in Modality column
 out_df["Modality"] = out_df["Modality"].str.replace(" ", "")
