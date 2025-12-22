@@ -206,6 +206,15 @@ def extract_excel_sheets(input_file, output_file, target_column, sheet_names,
             mask = df[target_column].notna() & (df[target_column].astype(str).str.strip() != '')
             filtered_df = df[mask].copy()
             
+            # rename column "Suggested LOINC Code" to "LOINC Code" and
+            # "LOINC LCN" to "L-Long Common Name"
+            if 'Suggested LOINC code' in filtered_df.columns:
+                filtered_df.rename(columns={'Suggested LOINC code': 'LOINC code'}, inplace=True)
+            if 'LONIC code' in filtered_df.columns:
+                filtered_df.rename(columns={'LONIC code': 'LOINC code'}, inplace=True)
+            if 'LOINC LCN' in filtered_df.columns:
+                filtered_df.rename(columns={'LOINC LCN': 'L-Long Common Name'}, inplace=True)
+            
             # Add a column to track which sheet the data came from
             filtered_df['Source_Sheet'] = sheet_name
             
@@ -228,13 +237,6 @@ def extract_excel_sheets(input_file, output_file, target_column, sheet_names,
         sys.exit(1)
     
     combined_df = pd.concat(all_data, ignore_index=True)
-
-    # rename column "Suggested LOINC Code" to "LOINC Code" and
-    # "LOINC LCN" to "L-Long Common Name"
-    if 'Suggested LOINC code' in combined_df.columns:
-        combined_df.rename(columns={'Suggested LOINC code': 'LOINC code'}, inplace=True)
-    if 'LOINC LCN' in combined_df.columns:
-        combined_df.rename(columns={'LOINC LCN': 'L-Long Common Name'}, inplace=True)
 
     print(combined_df.columns)
     # drop all columns except "LOINC Code", "L-Long Common Name", "Modality" and "StudyDescription"
