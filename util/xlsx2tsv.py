@@ -118,6 +118,8 @@ def find_duplicates(new_df, previous_df):
     cols_to_compare = [col for col in new_df.columns if col in previous_df.columns]
     
     # Create a merged dataframe to identify matches
+    print("Merging new and previous data to find duplicates...")
+    print(f"Columns used for comparison: {cols_to_compare}")
     merged = pd.merge(
         new_df,
         previous_df[cols_to_compare],
@@ -135,30 +137,6 @@ def find_duplicates(new_df, previous_df):
     unique_new = unique_new.reset_index(drop=True)
     
     return duplicates, unique_new
-
-
-def merge_mappings(new_df, previous_df, duplicates):
-    """
-    Merge new and previous mappings, with new entries added.
-    
-    Args:
-        new_df: DataFrame with newly extracted data
-        previous_df: DataFrame with previous mapping data
-        duplicates: DataFrame with duplicate rows
-        
-    Returns:
-        Merged DataFrame containing both previous and new unique data
-    """
-    if previous_df is None:
-        return new_df
-    
-    # Get unique new rows (not in duplicates)
-    unique_new = new_df[~new_df.index.isin(duplicates.index)]
-    
-    # Combine previous with new unique rows
-    merged = pd.concat([previous_df, unique_new], ignore_index=True)
-    
-    return merged
 
 
 def extract_excel_sheets(input_file, output_file, target_column, sheet_names, 
@@ -275,6 +253,7 @@ def extract_excel_sheets(input_file, output_file, target_column, sheet_names,
         print(f"\nDuplicate Detection Summary:")
         print(f"  Rows already in previous mapping (duplicates): {len(duplicates)}")
         print(f"  New unique rows: {len(unique_new)}")
+        print(unique_new)
         
         # Report duplicates as warnings
         if len(duplicates) > 0:
@@ -285,7 +264,7 @@ def extract_excel_sheets(input_file, output_file, target_column, sheet_names,
         
         # Create merged mapping
         if merged_output:
-            merged_df = merge_mappings(combined_df, previous_df, duplicates)
+            merged_df = pd.concat([previous_df, unique_new], ignore_index=True)
             print(f"\nMerged mapping created:")
             print(f"  Total rows in merged mapping: {len(merged_df)}")
     
