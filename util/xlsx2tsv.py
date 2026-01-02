@@ -3,6 +3,16 @@
 Extract rows from specified Excel sheets where LOINC LCN column is non-empty.
 Outputs the collated results to a TSV file.
 Supports comparison with earlier version for duplicate detection and merging.
+
+Example usage:
+
+* merge with the diff mapping in a specific sheet of an Excel spreadsheet:
+
+   python ./util/xlsx2tsv.py -p ./out/StudyDescription_mapping_table.tsv --merged mapping_merged.tsv --sheets StudyDescription_diffs ./out/Mapping\ StudyDescription_diffs\ 2025-12-10.xlsx
+
+* merge with the per-modality mapping in an Excel spreadsheet:
+
+    python ./util/xlsx2tsv.py -p ./out/StudyDescription_mapping_table.tsv --merged mapping_merged.tsv ./out/pending_StudyDescription_diffs_by_modality.xlsx    
 """
 
 import pandas as pd
@@ -332,9 +342,9 @@ Examples:
     
     parser.add_argument(
         '--sheets', '-s',
-        nargs='+',
-        default=DEFAULT_SHEETS,
-        help=f'List of sheet names to process (default: {", ".join(DEFAULT_SHEETS)})'
+        #nargs='+',
+        default=",".join(DEFAULT_SHEETS),
+        help=f'List of sheet names to process (default: {",".join(DEFAULT_SHEETS)})'
     )
     
     parser.add_argument(
@@ -365,7 +375,7 @@ Examples:
         input_file=args.input,
         output_file=args.output,
         target_column=args.column,
-        sheet_names=args.sheets,
+        sheet_names=args.sheets.split(","),
         previous_file=args.previous,
         merged_output=args.merged
     )

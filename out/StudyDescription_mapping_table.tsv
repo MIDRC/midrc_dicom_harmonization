@@ -559,3 +559,37 @@ MG	MG-POST PROCEDURE MAMMMO	36625-2	MG Breast Views
 MG	MAMMO SCREENING DIGITAL BILATERAL	26175-0	MG Breast - bilateral Screening
 RF	FL PHARYNX/SWALLOWING EVAL WITH FLUORO	24682-7	RF videography Hypopharynx and Esophagus Views W liquid and paste contrast PO during swallowing
 RF	FL ESOPHAGRAM	24678-5	RF Esophagus Views W contrast PO
+CT	CT CHEST W IV CONTRAST PULMONARY EMBOLUS	79077-4	CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT	CT CHEST WO IV CONTRAST LUNG PARENCHYMA	29252-4	CT Chest WO contrast
+CR,DX	CHEST PA & LATERAL (RAD)-CS	42272-5	XR Chest PA and Lateral
+CT	THORAX^CHEST_WO  (ADULT)	29252-4	CT Chest WO contrast
+CT,PT	PET LYMPHOMA NON HODGKINS (W/LOW DOSE CT)	81555-5	PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+CT	CT CERVICAL SPINE WO IV CONTRAST	30592-0	CT Cervical spine WO contrast
+CR	XR RIGHT HAND 3+ VIEWS	47371-0	XR Hand - right GE 3 Views
+CT	CT ABDOMEN/PELVIS ANGIO W OR W AND WO IV CONTRAST	87853-8	CT Abdomen and Pelvis and CT angiogram Abdominal aorta WO and W contrast IV
+CT	CALCIUM SCORING(ADULT)	36934-8	CT Heart for calcium scoring
+DX	XR LEFT KNEE 4+ VIEWS (NON-TRAUMA, PAIN/ARTHRITIS)	47374-4	XR Knee - left GE 4 Views
+MR	MR LUMBAR SPINE WO IV CONTRAST ORTHO	30679-5	MR Lumbar spine WO contrast
+CT	CT HEAD ARTERIOGRAM W AND WO IV CONTRAST	30593-8	CTA Head vessels WO and W contrast IV
+MR	MR CERVICAL SPINE WO IV CONTRAST NEURO	30667-0	MR Cervical spine WO contrast
+CT	CT ABDOMINAL AORTA ILIOFEMORAL RUNOFF ANG W AND WO IV	78031-2	CTA Abdominal Aorta and Bilateral Runoff Vessels WO and W contrast IV
+CT	THORAX^ROUTINE_CHEST_HR (ADULT)	29252-4	CT Chest WO contrast
+CT,PT	PET LYMPHOMA NON HODGK	81555-5	PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+CT,PT	PET LYMPHOMA HODGKINS (W/LOW DOSE CT)	81555-5	PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+CR	XR RIGHT HAND 1-2 VIEWS	37716-8	XR Hand - right Views
+CR,DX	XR PORT CHEST 1V	36589-0	Portable XR Chest AP single view
+CT	ABDOMEN^12_CTA_CAP (ADULT)	86983-4	CTA Chest vessels and Abdominal vessels and Pelvis vessels W contrast IV
+CT	VASCULAR^THORACIC_DISSECTION_CTA (ADULT)	86981-8	CTA Chest vessels
+CT	THORAX^C_A_P_WITH  (ADULT)	72254-6	CT Chest and Abdomen and Pelvis W contrast IV
+CT	CT CHEST ABDOMEN PELVIS W CONTRAST (PANCREAS)	72254-6	CT Chest and Abdomen and Pelvis W contrast IV
+CT,PT	PET LUNG CANCER OR PUL	81555-5	PET+CT Guidance for localization of tumor of Whole body-- W 18F-FDG IV
+DX	XR LEFT ANKLE 3+ VIEWS	46390-1	XR Ankle - left GE 3 Views
+MR	MR HEART W AND WO IV CONTRAST	36357-2	MR Heart WO and W contrast IV
+CR	XR LEFT HAND 1-2 VIEWS	36630-2	XR Hand - left Views
+CT	CT CHEST W O CONTRAST	29252-4	CT Chest WO contrast
+CT	CT CHEST W IVCON PE	79077-4	CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT	THORAX^HI_RES (ADULT)	24627-2	CT Chest
+CT	CHEST PE IP	79077-4	CTA Pulmonary arteries for pulmonary embolus W contrast IV
+CT	CT CHEST WO IVCON	29252-4	CT Chest WO contrast
+CT	CT PULMONARY W/CONTRAS	36147-7	CTA Pulmonary arteries W contrast IV
+CT	CT ABD PELVIS WITH CONTRAST-CS	36813-4	CT Abdomen and Pelvis W contrast IV
