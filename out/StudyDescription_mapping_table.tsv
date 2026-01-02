@@ -593,3 +593,6 @@ CT	CHEST PE IP	79077-4	CTA Pulmonary arteries for pulmonary embolus W contrast I
 CT	CT CHEST WO IVCON	29252-4	CT Chest WO contrast
 CT	CT PULMONARY W/CONTRAS	36147-7	CTA Pulmonary arteries W contrast IV
 CT	CT ABD PELVIS WITH CONTRAST-CS	36813-4	CT Abdomen and Pelvis W contrast IV
+MR	MRI CERVICAL SPINE WITHOUT CONTRAST	30667-0	MR Cervical spine WO contrast
+CR,DX	XR CHEST 2 VIEWS	42272-5	XR Chest PA and Lateral
+CT	CT HEAD WO IV CONTRAST	30799-1	CT Head WO contrast
