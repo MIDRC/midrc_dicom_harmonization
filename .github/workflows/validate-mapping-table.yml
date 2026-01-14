@@ -1,0 +1,52 @@
+name: Validate StudyDescription Mapping Table
+
+on:
+  # Allow manual triggering
+  workflow_dispatch:
+
+  # Run on pull requests
+  pull_request:
+    paths:
+      - 'out/StudyDescription_mapping_table.tsv'
+      - 'util/analyze_in_out.py'
+      - '.github/workflows/validate-mapping-table.yml'
+
+  # Run on pushes to main when mapping table changes
+  push:
+    branches:
+      - main
+    paths:
+      - 'out/StudyDescription_mapping_table.tsv'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.8.15]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas
+        python --version
+
+    - name: Validate mapping table
+      run: |
+        python util/analyze_in_out.py --validate .
+
+    - name: Report validation results
+      if: failure()
+      run: |
+        echo "::error::Mapping table validation failed. Please check the logs above for details."
+        exit 1
