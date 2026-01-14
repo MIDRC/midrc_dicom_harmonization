@@ -10,16 +10,26 @@ out_df = pd.read_csv(os.path.join(sys.argv[1], "out", "StudyDescription_mapping_
 # remove spaces in Modality column
 out_df["Modality"] = out_df["Modality"].str.replace(" ", "")
 
-# split Modality column into array by comma 
+# Save original dataframe with comma-separated Modality values
+out_df_original = out_df.copy()
+
+# split Modality column into array by comma
 out_df["Modality"] = out_df["Modality"].str.split(",")
 
 # explode Modality column into multiple rows
-out_df = out_df.explode("Modality")
+out_df_exploded = out_df.explode("Modality")
 
-print(out_df)
+# Union: combine original and exploded dataframes
+out_df = pd.concat([out_df_original, out_df_exploded], ignore_index=True)
+
+# Remove any duplicate rows
+out_df = out_df.drop_duplicates()
+
+
 
 all_diffs = None
 
+# pattern to match leading, trailing, and multiple spaces
 pattern = r"^\s+|\s+$|\s+(?=\s)"
 
    
@@ -30,14 +40,26 @@ if os.path.exists(fileName):
   print(f"Loading ...")
   in_df = pd.read_csv(fileName, sep="\t")
 
+  """
+  print("Initial in_df")
+  print(in_df[in_df['StudyDescription'] == "XR CHEST 2 VIEWS"])
+  print("Matches in out_df")
+  print(out_df[out_df['StudyDescription'] == "XR CHEST 2 VIEWS"])
+
+  out_df = out_df[out_df['StudyDescription'] == "XR CHEST 2 VIEWS"]
+  in_df = in_df[in_df['StudyDescription'] == "XR CHEST 2 VIEWS"]
+  """
+
   # clean up spaces
-  in_df["StudyDescription"] = in_df["StudyDescription"].str.replace(pattern, " ")
-  out_df["StudyDescription"] = out_df["StudyDescription"].str.replace(pattern, " ")
+  in_df["StudyDescription"] = in_df["StudyDescription"].str.replace(pattern, "")
+  in_df["Modality"] = in_df["Modality"].str.replace(pattern, "")
+  out_df["StudyDescription"] = out_df["StudyDescription"].str.replace(pattern, "")
 
   # capitalize
   in_df['StudyDescription'] = in_df['StudyDescription'].str.upper()
   out_df['StudyDescription'] = out_df['StudyDescription'].str.upper()
 
+  # merge to find differences
   diff_df = pd.merge(in_df, out_df, on=["StudyDescription", "Modality"], how="outer", indicator=True)
   diff_df = diff_df[diff_df["_merge"] == "left_only"]
 
