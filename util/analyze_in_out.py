@@ -311,6 +311,26 @@ def validate_mapping_table(repo_path):
     else:
         print("  PASS: No inconsistencies found for LOINC code mappings")
 
+    # Check 3: Same StudyDescription (ignoring Modality) with different LOINC codes
+    print("\nCheck 3: Identifying StudyDescriptions with multiple LOINC codes across different Modalities...")
+
+    duplicates_by_desc_only = mapping_df.groupby("StudyDescription")["LOINC code"].nunique()
+    inconsistent_desc_only = duplicates_by_desc_only[duplicates_by_desc_only > 1]
+
+    if len(inconsistent_desc_only) > 0:
+        print(f"  WARNING: Found {len(inconsistent_desc_only)} StudyDescriptions with multiple LOINC codes across different Modalities:")
+        for study_desc, count in inconsistent_desc_only.items():
+            print(f"\n    StudyDescription: {study_desc}")
+            affected_rows = mapping_df[
+                mapping_df["StudyDescription"] == study_desc
+            ][["Modality", "StudyDescription", "LOINC code", "L-Long Common Name"]].drop_duplicates()
+            print(f"    Different LOINC codes found ({count} unique):")
+            for _, row in affected_rows.iterrows():
+                print(f"      - Modality: {row['Modality']}, LOINC: {row['LOINC code']}")
+                print(f"        Name: {row['L-Long Common Name']}")
+    else:
+        print("  PASS: No StudyDescriptions with multiple LOINC codes found")
+
     # Summary
     print("\n" + "="*70)
     if validation_passed:
